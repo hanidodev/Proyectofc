@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ProyectoFCAS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_welcome_fragment">My Money</string>
+    <string name="hello_welcome_fragment">Una manera sencilla de gestionar tu dinero</string>
+    <string name="start_app_button">Comencemos</string>
 </resources>
