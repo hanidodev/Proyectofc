@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Contenedor de todos los elementos de primer nivel -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/primaryMenuContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Primer elemento del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuCasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_casa"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú 1, inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaCasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuCasaSuministros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_suministros"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <LinearLayout
+            android:id="@+id/vistaCasaSuministros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosAgua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_agua"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosElectricidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_electricidad"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosGas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_gas"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosTelecomunicaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_telecomunicaciones"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosOtros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_otros_suministros"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/menuItemCasaHipoteca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_hipoteca"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemCasaAlquiler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_alquiler"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+
+        <TextView
+            android:id="@+id/menuItemCasaComunidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_comunidad"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+    </LinearLayout>
+    <!-- Segundo elemento del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuCompras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_compras"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú 2, inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaCompras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuItemComprasSupermercado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_supermercado"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemComprasRopa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_ropa_y_complementos"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemComprasOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otras_compras"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+</LinearLayout>
+

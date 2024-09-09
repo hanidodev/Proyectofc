@@ -1,0 +1,43 @@
+Casa
+	Suministros
+		Agua
+		Electricidad
+		Gas
+		Telecomunicaciones
+		Otros
+	Hipoteca
+	Alquiler
+	Comunidad
+
+Compras
+	Supermercado
+	Ropa y complementos
+	Otros
+
+Coche
+	Combustible
+	Mantenimiento
+	Otros
+
+Seguros
+	Coche
+	Casa
+	Vida
+	Otros
+
+Ocio
+	Restauración
+	Entradas
+	Otros
+
+Salud
+	Médico
+	Farmacia
+	Otros
+
+Educación
+	Colegio
+	Cursos
+	Otros
+
+Suscripciones

@@ -4,4 +4,28 @@
     <string name="title_welcome_fragment">My Money</string>
     <string name="hello_welcome_fragment">Una manera sencilla de gestionar tu dinero</string>
     <string name="start_app_button">Comencemos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_gasto_button">Añadir gasto</string>
+    <string name="add_ingreso_button">Añadir ingreso</string>
+    <string name="pr_gastos_button">Gastos</string>
+    <string name="pr_presupuestos_button">Presupuestos</string>
+    <string name="pr_ingresos_button">Ingresos</string>
+    <string name="pr_estadistica_button">Estadística</string>
+    <string name="pr_transferencias_button">Transferencias</string>
+    <string name="button_home">Button</string>
+    <string name="etiqueta_casa">Casa</string>
+    <string name="etiqueta_suministros">Suministros</string>
+    <string name="etiqueta_agua">Agua</string>
+    <string name="etiqueta_electricidad">Electricidad</string>
+    <string name="etiqueta_gas">Gas</string>
+    <string name="etiqueta_telecomunicaciones">Telecomunicaciones</string>
+    <string name="etiqueta_otros_suministros">Otros suministros</string>
+    <string name="etiqueta_hipoteca">Hipoteca</string>
+    <string name="etiqueta_alquiler">Alquiler</string>
+    <string name="etiqueta_comunidad">Comunidad</string>
+    <string name="etiqueta_compras">Compras</string>
+    <string name="etiqueta_supermercado">Supermercado</string>
+    <string name="etiqueta_ropa_y_complementos">Ropa y complementos</string>
+    <string name="etiqueta_otras_compras">Otras compras</string>
 </resources>
