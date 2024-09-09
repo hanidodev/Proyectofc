@@ -14,20 +14,20 @@ Compras
 	Ropa y complementos
 	Otros
 
-Coche
+Vehículo
 	Combustible
 	Mantenimiento
 	Otros
 
 Seguros
-	Coche
+	Vehículo
 	Casa
 	Vida
 	Otros
 
 Ocio
 	Restauración
-	Entradas
+	Eventos
 	Otros
 
 Salud
@@ -41,3 +41,5 @@ Educación
 	Otros
 
 Suscripciones
+	Mensuales
+	Anuales

@@ -36,7 +36,7 @@
         tools:layout_editor_absoluteY="617dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_Gastos"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
