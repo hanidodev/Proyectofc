@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <!-- Contenedor de todos los elementos de primer nivel -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -9,7 +7,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <!-- Primer elemento del menú de primer nivel -->
+    <!-- Primer elemento (Casa) del menú de primer nivel -->
     <TextView
         android:id="@+id/menuCasa"
         android:layout_width="match_parent"
@@ -20,7 +18,7 @@
         android:background="?android:attr/selectableItemBackground"
         android:textStyle="bold" />
 
-    <!-- Submenú anidado bajo el menú 1, inicialmente oculto -->
+    <!-- Submenú anidado bajo el menú 1(Casa), inicialmente oculto -->
     <LinearLayout
         android:id="@+id/vistaCasa"
         android:layout_width="match_parent"
@@ -121,8 +119,17 @@
             android:padding="8dp"
             android:background="?android:attr/selectableItemBackground" />
 
+        <TextView
+            android:id="@+id/menuItemCasaOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_gastos_casa"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
     </LinearLayout>
-    <!-- Segundo elemento del menú de primer nivel -->
+    <!-- Segundo elemento (Compras) del menú de primer nivel -->
     <TextView
         android:id="@+id/menuCompras"
         android:layout_width="match_parent"
@@ -133,7 +140,7 @@
         android:background="?android:attr/selectableItemBackground"
         android:textStyle="bold" />
 
-    <!-- Submenú anidado bajo el menú 2, inicialmente oculto -->
+    <!-- Submenú anidado bajo el menú 2(Compras), inicialmente oculto -->
     <LinearLayout
         android:id="@+id/vistaCompras"
         android:layout_width="match_parent"
@@ -453,6 +460,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/etiqueta_anuales"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemOtrosSuscripciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_gastos_suscripciones"
             android:textSize="16sp"
             android:padding="8dp"
             android:background="?android:attr/selectableItemBackground" />

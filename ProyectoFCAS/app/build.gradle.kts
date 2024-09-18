@@ -37,6 +37,20 @@ android {
 
 dependencies {
 
+
+    // ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    //reciclerView
+    implementation(libs.androidx.recyclerview)
+    // For control over item selection of both touch and mouse driven selection
+    implementation(libs.androidx.recyclerview.selection)
+    //room
+    implementation(libs.room.runtime)
+    //room compiler
+    annotationProcessor(libs.room.compiler)
+    // LiveData
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    //navigation
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

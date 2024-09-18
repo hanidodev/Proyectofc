@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">ProyectoFCAS</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="title_welcome_fragment">My Money</string>
     <string name="hello_welcome_fragment">Una manera sencilla de gestionar tu dinero</string>
     <string name="start_app_button">Comencemos</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_gasto_button">Añadir gasto</string>
     <string name="add_ingreso_button">Añadir ingreso</string>
@@ -24,6 +22,7 @@
     <string name="etiqueta_hipoteca">Hipoteca</string>
     <string name="etiqueta_alquiler">Alquiler</string>
     <string name="etiqueta_comunidad">Comunidad</string>
+    <string name="etiqueta_otros_gastos_casa">Otros gastos de casa</string>
     <string name="etiqueta_compras">Compras</string>
     <string name="etiqueta_supermercado">Supermercado</string>
     <string name="etiqueta_ropa_y_complementos">Ropa y complementos</string>
@@ -52,4 +51,14 @@
     <string name="etiqueta_suscripciones">Suscripciones</string>
     <string name="etiqueta_mensuales">Mensuales</string>
     <string name="etiqueta_anuales">Anuales</string>
+    <string name="etiqueta_otros_gastos_suscripciones">Otras suscripciones</string>
+    <string name="etiqueta_gastos">Gastos</string>
+    <string name="etiqueta_texto_aqui">texto_aqui</string>
+    <string name="mostar_cantidad">Cantidad</string>
+    <string name="mostrar_concepto">Concepto</string>
+    <string name="mostrar_fecha">Fecha</string>
+    <string name="cabecera_cantidad">Cantidad (€)</string>
+    <string name="cabecera_concepto">Concepto</string>
+    <string name="cabecera_fecha">Fecha</string>
+
 </resources>

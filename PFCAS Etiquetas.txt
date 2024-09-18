@@ -8,38 +8,40 @@ Casa
 	Hipoteca
 	Alquiler
 	Comunidad
+	Otros gastos de casa
 
 Compras
 	Supermercado
 	Ropa y complementos
-	Otros
+	Otras compras
 
 Vehículo
 	Combustible
 	Mantenimiento
-	Otros
+	Otros gastos en vehículos
 
 Seguros
 	Vehículo
 	Casa
 	Vida
-	Otros
+	Otros seguros
 
 Ocio
 	Restauración
 	Eventos
-	Otros
+	Otros gastos en ocio
 
 Salud
 	Médico
 	Farmacia
-	Otros
+	Otros gastos en salud
 
 Educación
 	Colegio
 	Cursos
-	Otros
+	Otros gastos en educación
 
 Suscripciones
 	Mensuales
 	Anuales
+	Otras suscripciones
