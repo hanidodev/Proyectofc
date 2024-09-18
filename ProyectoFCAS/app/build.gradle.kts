@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.androidx.recyclerview.selection)
     //room
     implementation(libs.room.runtime)
+    implementation(libs.androidx.databinding.adapters)
     //room compiler
     annotationProcessor(libs.room.compiler)
     // LiveData
