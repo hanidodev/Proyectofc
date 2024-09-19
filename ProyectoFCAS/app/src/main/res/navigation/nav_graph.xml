@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_principalFragment_to_gastosFragment"
             app:destination="@id/gastosFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_addGastoFragment"
+            app:destination="@id/addGastoFragment" />
     </fragment>
     <fragment
         android:id="@+id/gastosFragment"
@@ -35,4 +38,8 @@
         android:id="@+id/gastos1nivelFragment"
         android:name="com.example.proyectofcas.Gastos1nivelFragment"
         android:label="Gastos1nivelFragment" />
+    <fragment
+        android:id="@+id/addGastoFragment"
+        android:name="com.example.proyectofcas.AddGastoFragment"
+        android:label="AddGastoFragment" />
 </navigation>

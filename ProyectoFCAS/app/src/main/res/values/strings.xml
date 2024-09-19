@@ -60,5 +60,31 @@
     <string name="cabecera_cantidad">Cantidad (€)</string>
     <string name="cabecera_concepto">Concepto</string>
     <string name="cabecera_fecha">Fecha</string>
+    <string name="title_add_gasto">Añadir gasto</string>
+    <string-array name="spinner_etiquetas_gastos">
+        <item>Agua</item>
+        <item>Electricidad</item>
+        <item>Gas</item>
+        <item>Telecomunicaciones</item>
+        <item>Hipoteca</item>
+        <item>Alquiler</item>
+        <item>Comunidad</item>
+        <item>Supermercado</item>
+        <item>Ropa y complementos</item>
+        <item>Combustible</item>
+        <item>Mantenimiento de vehículo</item>
+        <item>Seguro de coche</item>
+        <item>Seguro de casa</item>
+        <item>Seguro de vida</item>
+        <item>Restauración</item>
+        <item>Entradas a eventos</item>
+        <item>Médico</item>
+        <item>Farmacia</item>
+        <item>Colegio</item>
+        <item>Curso</item>
+        <item>Suscripción mensual</item>
+        <item>Suscripción anual</item>
+        <item>Otros gastos</item>
+    </string-array>
 
 </resources>
