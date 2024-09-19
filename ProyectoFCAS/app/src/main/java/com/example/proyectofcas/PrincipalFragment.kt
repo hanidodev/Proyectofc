@@ -23,6 +23,8 @@ class PrincipalFragment : Fragment() {
             view.findNavController().navigate(R.id.action_principalFragment_to_gastosFragment)
         }
 
+        val buttonAddGasto = view.findViewById<Button>(R.id.button_add_gasto)
+
         return view
     }
 

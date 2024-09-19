@@ -7,14 +7,13 @@ class GastoRepository(private val gastoDao: GastoDao) {
     fun getLast12Gastos(): LiveData<List<Gasto>> {
         return gastoDao.getLast12Gastos()
     }
-    /* TODO definir las siguientes queries en GastoDao
-    fun insert(gasto:Gasto){
-        gastoDao.insert(gasto)
+
+    suspend fun insertGasto(gasto:Gasto){
+        gastoDao.insertGasto(gasto)
     }
 
-    fun delete(gasto:Gasto){
-        gastoDao.delete(gasto)
+    suspend fun deleteGasto(gasto:Gasto){
+        gastoDao.deleteGasto(gasto)
     }
-    */
 
 }

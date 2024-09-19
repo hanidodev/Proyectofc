@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("kapt")
 }
 
 android {
@@ -47,8 +48,9 @@ dependencies {
     //room
     implementation(libs.room.runtime)
     implementation(libs.androidx.databinding.adapters)
+    implementation(libs.room.ktx)
     //room compiler
-    annotationProcessor(libs.room.compiler)
+    kapt(libs.room.compiler)
     // LiveData
     implementation(libs.androidx.lifecycle.livedata.ktx)
     //navigation

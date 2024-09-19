@@ -1,3 +1,5 @@
+package model
+
 import androidx.room.TypeConverter
 import java.util.Date
 

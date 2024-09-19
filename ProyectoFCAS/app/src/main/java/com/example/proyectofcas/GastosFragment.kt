@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 
 
 class GastosFragment : Fragment() {
@@ -58,6 +59,12 @@ class GastosFragment : Fragment() {
         // Configuración de los listeners para los elementos del primer nivel
         menuCasa.setOnClickListener {
             toggleSubMenu(vistaCasa, vistaSuministros, vistaCompras, vistaVehiculo, vistaSeguros, vistaOcio, vistaSalud, vistaEducacion, vistaSuscripciones)
+            //view.findNavController().navigate(R.id.action_welcomeFragment_to_principalFragment) )
+        }
+
+        menuCasa.setOnLongClickListener{
+            rootView.findNavController().navigate(R.id.action_gastosFragment_to_gastos1nivelFragment)
+            true
         }
 
         menuSuministros.setOnClickListener {

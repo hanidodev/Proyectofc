@@ -3,10 +3,8 @@ package model
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-/*
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
- */
 
 class AppViewModel(application: Application): AndroidViewModel(application) {
     private val repository:GastoRepository
@@ -18,17 +16,12 @@ class AppViewModel(application: Application): AndroidViewModel(application) {
         last12Gastos = repository.getLast12Gastos()
     }
 
-    /* TODO implementar las funciones en el repository, después de implementar las queries en GastoDao
-    fun insert(gasto:Gasto) = viewModelScope.launch {
-        repository.insert(gasto)
+    fun insertGasto(gasto:Gasto) = viewModelScope.launch {
+        repository.insertGasto(gasto)
     }
 
-    fun delete(gasto:Gasto) = viewModelScope.launch {
-        repository.delete(gasto)
+    fun deleteGasto(gasto:Gasto) = viewModelScope.launch {
+        repository.deleteGasto(gasto)
     }
 
-    fun getLast12Gastos():LiveData<List<Gasto>>{
-        return repository.getLast12Gastos()
-    }
-     */
 }
