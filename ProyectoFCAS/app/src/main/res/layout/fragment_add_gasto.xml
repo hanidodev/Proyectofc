@@ -20,10 +20,64 @@
         android:id="@+id/spinner_add_gasto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:entries="@array/spinner_etiquetas_gastos"
         android:minHeight="48dp" />
 
+    <Spinner
+        android:id="@+id/spinner_add_gasto_otros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:prompt="@string/texto_seleccionar"
+        android:entries="@array/spinner_etiquetas_gastos_otros"
+        android:minHeight="48dp" />
 
+    <EditText
+        android:id="@+id/add_gasto_cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_margin="8dp"
+        android:padding="12dp"
+        android:maxLines="1"
+        android:hint="@string/hint_especificar_cantidad_en_euros"
+        android:textColorHint="#546E7A" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_gasto_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:focusable="true"
+            android:hint="@string/hint_seleccione_una_fecha"
+            android:inputType="date"
+            android:textColorHint="#546E7A" />
+
+        <DatePicker
+            android:id="@+id/add_gasto_datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="-8dp"
+            android:layout_above="@+id/button_add_insert"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/button_add_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_gasto_2lines"
+            android:layout_margin="16dp"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
 
 </LinearLayout>

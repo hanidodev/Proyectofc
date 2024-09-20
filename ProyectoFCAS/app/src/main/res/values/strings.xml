@@ -5,6 +5,7 @@
     <string name="start_app_button">Comencemos</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_gasto_button">Añadir gasto</string>
+    <string name="add_gasto_2lines">Añadir\n gasto</string>
     <string name="add_ingreso_button">Añadir ingreso</string>
     <string name="pr_gastos_button">Gastos</string>
     <string name="pr_presupuestos_button">Presupuestos</string>
@@ -86,5 +87,17 @@
         <item>Suscripción anual</item>
         <item>Otros gastos</item>
     </string-array>
-
+    <string-array name="spinner_etiquetas_gastos_otros">
+        <item>Otros Casa</item>
+        <item>Otros Compras</item>
+        <item>Otros Vehículos</item>
+        <item>Otros Seguros</item>
+        <item>Otros Ocio</item>
+        <item>Otros Salud</item>
+        <item>Otros Educación</item>
+        <item>Otros Suscripciones</item>
+    </string-array>
+    <string name="texto_seleccionar">Seleccionar</string>
+    <string name="hint_especificar_cantidad_en_euros">Especificar cantidad en euros</string>
+    <string name="hint_seleccione_una_fecha">Seleccione una fecha</string>
 </resources>

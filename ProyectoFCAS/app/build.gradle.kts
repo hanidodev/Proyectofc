@@ -5,6 +5,11 @@ plugins {
 }
 
 android {
+    //viewBinding
+    buildFeatures{
+        viewBinding=true
+    }
+
     namespace = "com.example.proyectofcas"
     compileSdk = 34
 
