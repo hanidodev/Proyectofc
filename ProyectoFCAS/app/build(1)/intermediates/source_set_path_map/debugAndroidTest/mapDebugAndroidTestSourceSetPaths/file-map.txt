@@ -1,0 +1,5 @@
+com.example.proyectofcas.test.app-core-1.6.1-0 C:\Users\hecto\.gradle\caches\transforms-4\c8fac6e2e18c10dce6cfcc0685176b96\transformed\core-1.6.1\res
+com.example.proyectofcas.test.app-androidTest-1 C:\Users\hecto\OneDrive\Desktop\ProyectoFC\Proyectofc\ProyectoFCAS\app\build\generated\res\resValues\androidTest\debug
+com.example.proyectofcas.test.app-mergeDebugAndroidTestResources-2 C:\Users\hecto\OneDrive\Desktop\ProyectoFC\Proyectofc\ProyectoFCAS\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.proyectofcas.test.app-mergeDebugAndroidTestResources-3 C:\Users\hecto\OneDrive\Desktop\ProyectoFC\Proyectofc\ProyectoFCAS\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.proyectofcas.test.app-debugAndroidTest-4 C:\Users\hecto\OneDrive\Desktop\ProyectoFC\Proyectofc\ProyectoFCAS\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

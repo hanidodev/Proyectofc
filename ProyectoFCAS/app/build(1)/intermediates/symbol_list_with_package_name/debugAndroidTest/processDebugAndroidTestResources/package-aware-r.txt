@@ -1,0 +1,3 @@
+com.example.proyectofcas.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
