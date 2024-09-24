@@ -8,9 +8,19 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyectofcas.databinding.FragmentDisplayBinding
 import model.AppViewModel
 
-class Gastos1nivelFragment : Fragment() {
+class DisplayFragment : Fragment() {
+
+    private var _bindingDisplay:FragmentDisplayBinding? = null
+    private val bindingDisplay:FragmentDisplayBinding
+        get() = _bindingDisplay!!
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _bindingDisplay = null
+    }
 
     private lateinit var appViewModel:AppViewModel
     private lateinit var adapter:GastoAdapter
@@ -19,15 +29,17 @@ class Gastos1nivelFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_gastos1nivel, container, false)
+        //val view = inflater.inflate(R.layout.fragment_display, container, false)
+        _bindingDisplay = FragmentDisplayBinding.inflate(inflater, container, false)
+        val view = bindingDisplay.root
 
         //inicializar el viewModel compartido en el activity
         appViewModel = ViewModelProvider(requireActivity())[AppViewModel::class.java]
 
         //configuración del reciclerView
-        recyclerView = view.findViewById(R.id.recyclerView)
+        recyclerView = bindingDisplay.recyclerView
         adapter = GastoAdapter()
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
