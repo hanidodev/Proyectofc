@@ -5,41 +5,53 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.example.proyectofcas.databinding.FragmentGastosBinding
 
 
 class GastosFragment : Fragment() {
 
+    //viewBinding
+    private var _bindingGastos:FragmentGastosBinding? = null
+    private val bindingGastos:FragmentGastosBinding
+        get() = _bindingGastos!!
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _bindingGastos = null
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        val rootView = inflater.inflate(R.layout.fragment_gastos, container, false)
+        //val rootView = inflater.inflate(R.layout.fragment_gastos, container, false)
+        _bindingGastos = FragmentGastosBinding.inflate(inflater, container, false)
+        val rootview = bindingGastos.root
 
         // Referencias a los elementos del layout
-        rootView.findViewById<LinearLayout>(R.id.primaryMenuContainer)
-        val menuCasa = rootView.findViewById<TextView>(R.id.menuCasa)
-        val vistaCasa = rootView.findViewById<LinearLayout>(R.id.vistaCasa)
+        //rootView.findViewById<LinearLayout>(R.id.primaryMenuContainer)
+        val menuCasa = bindingGastos.menuCasa
+        val vistaCasa = bindingGastos.vistaCasa
         //Sumenú de casa
-            val menuSuministros = rootView.findViewById<TextView>(R.id.menuCasaSuministros)
-            val vistaSuministros = rootView.findViewById<LinearLayout>(R.id.vistaCasaSuministros)
-        val menuCompras = rootView.findViewById<TextView>(R.id.menuCompras)
-        val vistaCompras = rootView.findViewById<LinearLayout>(R.id.vistaCompras)
-        val menuVehiculo = rootView.findViewById<TextView>(R.id.menuVehiculo)
-        val vistaVehiculo = rootView.findViewById<LinearLayout>(R.id.vistaVehiculo)
-        val menuSeguros = rootView.findViewById<TextView>(R.id.menuSeguros)
-        val vistaSeguros = rootView.findViewById<LinearLayout>(R.id.vistaSeguros)
-        val menuOcio = rootView.findViewById<TextView>(R.id.menuOcio)
-        val vistaOcio = rootView.findViewById<LinearLayout>(R.id.vistaOcio)
-        val menuSalud = rootView.findViewById<TextView>(R.id.menuSalud)
-        val vistaSalud = rootView.findViewById<LinearLayout>(R.id.vistaSalud)
-        val menuEducacion = rootView.findViewById<TextView>(R.id.menuEducacion)
-        val vistaEducacion = rootView.findViewById<LinearLayout>(R.id.vistaEducacion)
-        val menuSuscripciones = rootView.findViewById<TextView>(R.id.menuSuscripciones)
-        val vistaSuscripciones = rootView.findViewById<LinearLayout>(R.id.vistaSuscripciones)
+            val menuSuministros = bindingGastos.menuCasaSuministros
+            val vistaSuministros = bindingGastos.vistaCasaSuministros
+        val menuCompras = bindingGastos.menuCompras
+        val vistaCompras = bindingGastos.vistaCompras
+        val menuVehiculo = bindingGastos.menuVehiculo
+        val vistaVehiculo = bindingGastos.vistaVehiculo
+        val menuSeguros = bindingGastos.menuSeguros
+        val vistaSeguros = bindingGastos.vistaSeguros
+        val menuOcio = bindingGastos.menuOcio
+        val vistaOcio = bindingGastos.vistaOcio
+        val menuSalud = bindingGastos.menuSalud
+        val vistaSalud = bindingGastos.vistaSalud
+        val menuEducacion = bindingGastos.menuEducacion
+        val vistaEducacion = bindingGastos.vistaEducacion
+        val menuSuscripciones = bindingGastos.menuSuscripciones
+        val vistaSuscripciones = bindingGastos.vistaSuscripciones
         //vistaCasa, vistaSuministros, vistaCompras, vistaVehiculo, vistaSeguros, vistaOcio, vistaSalud, vistaEducacion, vistaSuscripciones
 
         // Función para alternar la visibilidad de los menús
@@ -63,7 +75,8 @@ class GastosFragment : Fragment() {
         }
 
         menuCasa.setOnLongClickListener{
-            rootView.findNavController().navigate(R.id.action_gastosFragment_to_gastos1nivelFragment)
+            rootview.findNavController().navigate(R.id.action_gastosFragment_to_gastos1nivelFragment)
+
             true
         }
 
@@ -99,7 +112,7 @@ class GastosFragment : Fragment() {
             toggleSubMenu(vistaSuscripciones, vistaCasa, vistaSuministros, vistaCompras, vistaVehiculo, vistaSeguros, vistaOcio, vistaSalud, vistaEducacion)
         }
 
-        return rootView
+        return rootview
     }
 
 }

@@ -5,36 +5,23 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.proyectofcas.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var bindingActivity:ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        bindingActivity = ActivityMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.fragment_container_view)) { v, insets ->
+        setContentView(bindingActivity.root)
+        ViewCompat.setOnApplyWindowInsetsListener(bindingActivity.fragmentContainerView) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        /*
-        //inicializa el reciclerView
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        adapter = GastoAdapter()
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(this)
 
-        //inicializa el viewModel con ViewModelProvider que permite compartirlo entre los distintos fragmentos
-        appViewModel = ViewModelProvider(this)[AppViewModel::class.java]
-
-        //observación de la base de datos
-        appViewModel.last12Gastos.observe(this) { gastos ->
-            gastos?.let {
-                adapter.submitList(it)
-            }
-            //actualiza la UI con los registros (se pueden pasar al fragment correspondiente)
-        }
-        */
     }
-
 
 }

@@ -1,12 +1,12 @@
 package com.example.proyectofcas
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyectofcas.databinding.FragmentItemBinding
 import model.Gasto
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -14,7 +14,7 @@ import java.util.Locale
 class GastoAdapter : ListAdapter<Gasto, GastoAdapter.GastoViewHolder>(GastoDiffCallback()) {
 
     // ViewHolder: mantiene las referencias a las vistas de cada fila
-    class GastoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class GastoViewHolder(binding: FragmentItemBinding) : RecyclerView.ViewHolder(binding.root) {
         private val cantidadTextView: TextView = itemView.findViewById(R.id.cantidadTextView)
         private val conceptoTextView: TextView = itemView.findViewById(R.id.conceptoTextView)
         private val fechaTextView: TextView = itemView.findViewById(R.id.fechaTextView)
@@ -29,9 +29,8 @@ class GastoAdapter : ListAdapter<Gasto, GastoAdapter.GastoViewHolder>(GastoDiffC
 
     // Crea nuevas vistas (es decir, infla el layout de cada fila)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GastoViewHolder {
-        val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.fragment_item, parent, false)
-        return GastoViewHolder(itemView)
+        val binding = FragmentItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return GastoViewHolder(binding)
     }
 
     // Enlaza los datos de un objeto Registro con una fila específica

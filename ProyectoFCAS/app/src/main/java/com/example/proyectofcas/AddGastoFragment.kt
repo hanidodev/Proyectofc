@@ -38,21 +38,19 @@ class AddGastoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        //val view = inflater.inflate(R.layout.fragment_add_gasto, container, false)
         _bindingAddGasto = FragmentAddGastoBinding.inflate(inflater, container, false)
         val view = bindingAddGasto.root
-        //declaracion de los spinners de concepto
 
+        //declaracion de los spinners de concepto
         val spinnerConcepto = bindingAddGasto.spinnerAddGasto
         val spinnerOtrosGastos = bindingAddGasto.spinnerAddGastoOtros
 
         //evento para activar/desactivar el segundo spinner dependiendo de valor escogido del primero
-        spinnerOtrosGastos.isEnabled = false
         spinnerConcepto.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 val selectedItem = parent.getItemAtPosition(position).toString()
 
-                // Activar o desactivar el Spinner B según el valor seleccionado
+                // Activar o desactivar el SpinnerOtrosGastos según el valor seleccionado
                 if (selectedItem == "Otros gastos") {
                     spinnerOtrosGastos.isEnabled = true
                 } else {
@@ -85,7 +83,7 @@ class AddGastoFragment : Fragment() {
             val cantidadGasto:Double
             if(cantidad.isNotEmpty()){
                 cantidadGasto = cantidad.toString().trim().toDouble()
-            }else cantidadGasto = 5.0
+            }else cantidadGasto = 0.0
 
             val gastoInsert =
                 Gasto(concepto = conceptoGasto, cantidad = cantidadGasto, fecha = fechaGasto)

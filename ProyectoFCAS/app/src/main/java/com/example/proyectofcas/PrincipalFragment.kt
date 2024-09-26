@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.navigation.findNavController
+import com.example.proyectofcas.databinding.FragmentPrincipalBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -16,14 +17,24 @@ import model.GastoDao
 
 class PrincipalFragment : Fragment() {
 
+    private var _bindingPrincipal:FragmentPrincipalBinding? = null
+    private val bindingPrincipal:FragmentPrincipalBinding
+        get() = _bindingPrincipal!!
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _bindingPrincipal = null
+    }
+
     private lateinit var gastoDao: GastoDao
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_principal, container, false)
+        _bindingPrincipal = FragmentPrincipalBinding.inflate(inflater, container, false)
+        val view = bindingPrincipal.root
 
         //obtenemos la base de datos
         val db = AppDatabase.getDatabase(requireContext())
@@ -42,7 +53,7 @@ class PrincipalFragment : Fragment() {
         }
 
         //borrado de todos los registros de la tabla gastos en la base de datos
-        val buttonBorrar = view.findViewById<Button>(R.id.buttonBorrar)
+        val buttonBorrar = bindingPrincipal.buttonBorrar
         buttonBorrar.setOnClickListener{
             CoroutineScope(Dispatchers.IO).launch {
                 try {
