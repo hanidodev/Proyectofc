@@ -89,5 +89,15 @@
         android:layout_height="wrap_content"
         app:constraint_referenced_ids="button_presupuestos,button_transferencias,button_gastos,button_ingresos,button_estadisticas" />
 
+    <Button
+        android:id="@+id/buttonBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_borrarBD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

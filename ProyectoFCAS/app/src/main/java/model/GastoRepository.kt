@@ -16,4 +16,8 @@ class GastoRepository(private val gastoDao: GastoDao) {
         gastoDao.deleteGasto(gasto)
     }
 
+    suspend fun deleteAll(){
+        gastoDao.deleteAll()
+    }
+
 }

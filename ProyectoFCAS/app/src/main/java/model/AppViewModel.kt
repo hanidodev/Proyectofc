@@ -24,4 +24,10 @@ class AppViewModel(application: Application): AndroidViewModel(application) {
         repository.deleteGasto(gasto)
     }
 
+    fun deleteAll(){
+        viewModelScope.launch {
+            repository.deleteAll()
+        }
+    }
+
 }

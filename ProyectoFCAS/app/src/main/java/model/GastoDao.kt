@@ -17,4 +17,7 @@ interface GastoDao {
     @Delete
     suspend fun deleteGasto(gasto:Gasto)
 
+    @Query("DELETE FROM gastos")
+    suspend fun deleteAll()
+
 }

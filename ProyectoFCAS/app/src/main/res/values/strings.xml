@@ -99,5 +99,5 @@
     </string-array>
     <string name="texto_seleccionar">Seleccionar</string>
     <string name="hint_especificar_cantidad_en_euros">Especificar cantidad en euros</string>
-    <string name="hint_seleccione_una_fecha">Seleccione una fecha</string>
+    <string name="button_borrarBD">Borrar\ntodos los datos\nde la bd</string>
 </resources>

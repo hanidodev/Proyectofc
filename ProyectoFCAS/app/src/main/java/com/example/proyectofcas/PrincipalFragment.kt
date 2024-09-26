@@ -6,9 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.navigation.findNavController
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import model.AppDatabase
+import model.GastoDao
 
 class PrincipalFragment : Fragment() {
+
+    private lateinit var gastoDao: GastoDao
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -16,6 +24,10 @@ class PrincipalFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_principal, container, false)
+
+        //obtenemos la base de datos
+        val db = AppDatabase.getDatabase(requireContext())
+        gastoDao = db.gastoDao()
 
         val buttonStart = view.findViewById<Button>(R.id.button_gastos)
 
@@ -27,6 +39,25 @@ class PrincipalFragment : Fragment() {
 
         buttonAddGasto.setOnClickListener{
             view.findNavController().navigate(R.id.action_principalFragment_to_addGastoFragment)
+        }
+
+        //borrado de todos los registros de la tabla gastos en la base de datos
+        val buttonBorrar = view.findViewById<Button>(R.id.buttonBorrar)
+        buttonBorrar.setOnClickListener{
+            CoroutineScope(Dispatchers.IO).launch {
+                try {
+                    gastoDao.deleteAll()
+                    // Verificar si la inserción fue exitosa
+                    CoroutineScope(Dispatchers.Main).launch {
+                        Toast.makeText(requireContext(), "BD borrada con éxito", Toast.LENGTH_SHORT).show()
+                    }
+                } catch (e: Exception) {
+                    // Manejar la excepción y mostrar un mensaje en el hilo principal
+                    CoroutineScope(Dispatchers.Main).launch {
+                        Toast.makeText(requireContext(), "Error al borrar la BD: ${e.message}", Toast.LENGTH_LONG).show()
+                    }
+                }
+            }
         }
 
         return view
