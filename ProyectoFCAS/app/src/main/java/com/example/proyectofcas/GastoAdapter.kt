@@ -15,9 +15,9 @@ class GastoAdapter : ListAdapter<Gasto, GastoAdapter.GastoViewHolder>(GastoDiffC
 
     // ViewHolder: mantiene las referencias a las vistas de cada fila
     class GastoViewHolder(binding: FragmentItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        private val cantidadTextView: TextView = itemView.findViewById(R.id.cantidadTextView)
-        private val conceptoTextView: TextView = itemView.findViewById(R.id.conceptoTextView)
-        private val fechaTextView: TextView = itemView.findViewById(R.id.fechaTextView)
+        private val cantidadTextView: TextView = binding.cantidadTextView
+        private val conceptoTextView: TextView = binding.conceptoTextView
+        private val fechaTextView: TextView = binding.fechaTextView
 
         // Método para enlazar datos del Registro con la vista
         fun bind(gasto:Gasto) {

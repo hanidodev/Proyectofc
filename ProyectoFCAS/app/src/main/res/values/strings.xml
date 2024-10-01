@@ -63,6 +63,7 @@
     <string name="cabecera_fecha">Fecha</string>
     <string name="title_add_gasto">Añadir gasto</string>
     <string-array name="spinner_etiquetas_gastos">
+        <item>Seleccionar concepto</item>
         <item>Agua</item>
         <item>Electricidad</item>
         <item>Gas</item>
