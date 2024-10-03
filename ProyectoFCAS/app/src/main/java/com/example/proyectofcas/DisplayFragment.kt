@@ -45,7 +45,7 @@ class DisplayFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         //observar los gastos a mostrar (12 últimos)
-        appViewModel.last12Gastos.observe(viewLifecycleOwner) { gastos ->
+        appViewModel.allGastosCasa.observe(viewLifecycleOwner) { gastos ->
             gastos?.let {
                 //actualiza los datos en el reciclerView
                 adapter.submitList(it)

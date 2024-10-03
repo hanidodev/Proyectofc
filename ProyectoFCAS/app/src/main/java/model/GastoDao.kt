@@ -8,8 +8,12 @@ import androidx.room.Query
 
 @Dao
 interface GastoDao {
+
     @Query("SELECT * FROM gastos ORDER BY fecha DESC LIMIT 12")
     fun getLast12Gastos(): LiveData<List<Gasto>>
+
+    @Query("SELECT * FROM gastos WHERE concepto IN (:conceptos) ORDER BY fecha DESC LIMIT 12")
+    fun getGastosByConcept(conceptos:List<String>):LiveData<List<Gasto>>
 
     @Insert
     suspend fun insertGasto(gasto:Gasto)

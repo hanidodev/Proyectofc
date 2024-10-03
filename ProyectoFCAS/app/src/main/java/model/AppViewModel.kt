@@ -15,6 +15,13 @@ class AppViewModel(application: Application): AndroidViewModel(application) {
         repository = GastoRepository(gastoDao)
         last12Gastos = repository.getLast12Gastos()
     }
+    val conceptosCasa = listOf("Casa", "Agua", "Electricidad", "Gas", "Telecomunicaciones", "Otros casa", "Hipoteca", "Alquiler", "Comunidad")
+    val allGastosCasa = repository.getGastosByConcept(conceptosCasa)
+
+    //Método genérico que recibe una lista de conceptos y devuelve un livedata
+    fun getGastosByConcept(conceptos:List<String>){
+        repository.getGastosByConcept(conceptos)
+    }
 
     fun insertGasto(gasto:Gasto) = viewModelScope.launch {
         repository.insertGasto(gasto)

@@ -76,56 +76,56 @@ class AddGastoFragment : Fragment() {
         val db = AppDatabase.getDatabase(requireContext())
         gastoDao = db.gastoDao()
 
-            bindingAddGasto.buttonAddInsert.setOnClickListener {
+        bindingAddGasto.buttonAddInsert.setOnClickListener {
 
-                //referencia al textView de la cantidad
-                val cantidadGasto = bindingAddGasto.addGastoCantidad
-                val cantidad = cantidadGasto.text.toString().toDoubleOrNull() ?: 0.0
+            //referencia al textView de la cantidad
+            val cantidadGasto = bindingAddGasto.addGastoCantidad
+            val cantidad = cantidadGasto.text.toString().toDoubleOrNull() ?: 0.0
 
-                val conceptoAsignado = spinnerConcepto.selectedItem.toString()
-                if(conceptoAsignado == "Seleccionar concepto"){
-                    Toast.makeText(requireContext(), "Por favor, selecciona un concepto de la lista", Toast.LENGTH_SHORT).show()
+            val conceptoAsignado = spinnerConcepto.selectedItem.toString()
+            if(conceptoAsignado == "Seleccionar concepto"){
+                Toast.makeText(requireContext(), "Por favor, selecciona un concepto de la lista", Toast.LENGTH_SHORT).show()
+            }else{
+                if(cantidad <= 0){
+                    Toast.makeText(requireContext(), "La cantidad ha de ser mayor de 0", Toast.LENGTH_SHORT).show()
                 }else{
-                    if(cantidad <= 0){
-                        Toast.makeText(requireContext(), "La cantidad ha de ser mayor de 0", Toast.LENGTH_SHORT).show()
-                    }else{
 
-                        val fechaDia = bindingAddGasto.addGastoDatePicker.dayOfMonth
-                        val fechaMes = bindingAddGasto.addGastoDatePicker.month + 1
-                        val fechaAno = bindingAddGasto.addGastoDatePicker.year
-                        val fechaCompleta = LocalDate.of(fechaAno, fechaMes, fechaDia)
-                        val fechaGasto = fechaCompleta.atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli()
+                    val fechaDia = bindingAddGasto.addGastoDatePicker.dayOfMonth
+                    val fechaMes = bindingAddGasto.addGastoDatePicker.month + 1
+                    val fechaAno = bindingAddGasto.addGastoDatePicker.year
+                    val fechaCompleta = LocalDate.of(fechaAno, fechaMes, fechaDia)
+                    val fechaGasto = fechaCompleta.atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli()
 
-                        val conceptoGasto: String
-                        if (spinnerOtrosGastos.isEnabled) conceptoGasto =
-                            spinnerOtrosGastos.selectedItem.toString() else conceptoGasto =
-                            spinnerConcepto.selectedItem.toString()
+                    val conceptoGasto: String
+                    if (spinnerOtrosGastos.isEnabled) conceptoGasto =
+                        spinnerOtrosGastos.selectedItem.toString() else conceptoGasto =
+                        spinnerConcepto.selectedItem.toString()
 
-                        val gastoInsert = Gasto(concepto = conceptoGasto, cantidad = cantidad, fecha = fechaGasto)
+                    val gastoInsert = Gasto(concepto = conceptoGasto, cantidad = cantidad, fecha = fechaGasto)
 
-                        viewLifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
-                            try {
-                                gastoDao.insertGasto(gastoInsert)
-                                // Verificar si la inserción fue exitosa
-                                CoroutineScope(Dispatchers.Main).launch {
+                    viewLifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+                        try {
+                            gastoDao.insertGasto(gastoInsert)
+                            // Verificar si la inserción fue exitosa
+                            CoroutineScope(Dispatchers.Main).launch {
 
-                                    Toast.makeText(requireContext(), "Gasto insertado con éxito", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(requireContext(), "Gasto insertado con éxito", Toast.LENGTH_SHORT).show()
 
-                                    spinnerConcepto.setSelection(0)
-                                    spinnerOtrosGastos.setSelection(0)
-                                    bindingAddGasto.addGastoDatePicker.updateDate(actualYear, actualMonth, actualDay)
-                                    bindingAddGasto.addGastoCantidad.setText("0.0")
-                                }
-                            } catch (e: Exception) {
-                                // Manejar la excepción y mostrar un mensaje en el hilo principal
-                                CoroutineScope(Dispatchers.Main).launch {
-                                    Toast.makeText(requireContext(), "Error al insertar el gasto: ${e.message}", Toast.LENGTH_LONG).show()
-                                }
+                                spinnerConcepto.setSelection(0)
+                                spinnerOtrosGastos.setSelection(0)
+                                bindingAddGasto.addGastoDatePicker.updateDate(actualYear, actualMonth, actualDay)
+                                bindingAddGasto.addGastoCantidad.setText("0.0")
+                            }
+                        } catch (e: Exception) {
+                            // Manejar la excepción y mostrar un mensaje en el hilo principal
+                            CoroutineScope(Dispatchers.Main).launch {
+                                Toast.makeText(requireContext(), "Error al insertar el gasto: ${e.message}", Toast.LENGTH_LONG).show()
                             }
                         }
                     }
                 }
             }
+        }
         return view
     }
 }
