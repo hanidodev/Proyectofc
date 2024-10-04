@@ -8,9 +8,9 @@
 * Qué obxectivos ten o teu proxecto? Qué requisitos básicos debe cumprir?
 * Qué tecnoloxías tes pensado empregar para levalo a cabo?
 
-#Anteproyecto
+# Anteproyecto
 
-##Resumen del proyecto.
+## Resumen del proyecto.
 El proyecto consiste en una aplicación móvil para Android, diseñada bajo la
 arquitectura MVVM, cuyo propósito es gestionar la economía familiar o
 personal del usuario y ayudar a controlar sus gastos de manera eficiente.
@@ -34,7 +34,7 @@ La aplicación aborda estos desafíos mediante el uso de tecnologías móviles
 avanzadas, asegurando una experiencia de usuario fluida y una gestión
 eficiente de los datos financieros.
 
-##Objetivos.
+## Objetivos.
 El objetivo principal del proyecto es el de desarrollar por completo una
 aplicación de gestión de gastos a nivel personal/familiar que sea consistente y
 fácil de manejar. Dicha aplicación será desarrollada en la plataforma Android
@@ -54,7 +54,7 @@ Otro objetivo es el de optimizar la inserción y visualización de los datos,
 garantizando la integridad y consistencia mediante el uso de tecnologías de
 persistencia de datos modernas como Room.
 
-##Descripción del proyecto.
+## Descripción del proyecto.
 
 Tendremos una pantalla de bienvenida con el título de la aplicación y el
 registro.
@@ -69,7 +69,7 @@ persistentes a través de cambios de configuración de la aplicación. El uso de
 fragmentos permitirá una mejor organización del código y facilitará futuras
 expansiones.
 
-##Funcionalidades principales:
+## Funcionalidades principales:
 La opción de “gastos” y la de “ingresos” nos llevará a otra pantalla donde
 tendremos un menú para escoger qué tipo de gastos o ingresos queremos
 visualizar.
@@ -81,7 +81,7 @@ una interfaz modular y escalable. El uso de RecyclerView, gestionado a través
 de un Adapter personalizado, permitirá una presentación optimizada de los
 datos.
 
-##Funcionalidades de ampliación:
+## Funcionalidades de ampliación:
 
 Transferencias: permitiría tener en una tabla aparte, los registros con las
 transferencias realizadas o recibidas por el usuario. Ya que no se pueden
@@ -107,7 +107,7 @@ lugar de KAPT optimizará la generación de código y reducirá los tiempos de
 compilación. Junto con room, usaremos viewModel para la consistencia de
 datos en la aplicación junto con otras tecnologías como LiveData.
 
-##Metodología.
+## Metodología.
 Para el desarrollo de esta aplicación usaremos el IDE Android Studio,
 respaldado por Git mediante un repositorio en Github para el control de
 versiones.
