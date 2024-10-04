@@ -99,7 +99,6 @@ con LiveData para manejar actualizaciones en tiempo real. El uso de KSP en
 lugar de KAPT optimizará la generación de código y reducirá los tiempos de
 compilación. Junto con room, usaremos viewModel para la consistencia de
 datos en la aplicación junto con otras tecnologías como LiveData.
-
 ## Metodología.
 Para el desarrollo de esta aplicación usaremos el IDE Android Studio,
 respaldado por Git mediante un repositorio en Github para el control de
@@ -111,6 +110,5 @@ programática de las principales funcionalidades.
 En una segunda etapa, pondremos más atención a toda la parte de la interfaz,
 intentando ajustar y pulir las vistas que tengamos funcionando. También
 tendremos que revisar la usabilidad de la aplicación.
-
 En una hipotética tercera etapa el objetivo sería añadir nuevas funcionalidades
 que completen la aplicación.
