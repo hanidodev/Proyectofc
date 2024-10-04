@@ -13,7 +13,7 @@
 El proyecto consiste en una aplicación móvil para Android, diseñada bajo la
 arquitectura MVVM, cuyo propósito es gestionar la economía familiar o
 personal del usuario y ayudar a controlar sus gastos de manera eficiente.
-### Introducción.
+## Introducción.
 El objetivo principal de la aplicación es ofrecer al usuario una herramienta
 eficiente para el seguimiento y control de sus gastos personales y familiares ya
 que hoy en día es normal que una persona tenga múltiples gastos. Por un lado,
@@ -75,8 +75,7 @@ una interfaz modular y escalable. El uso de RecyclerView, gestionado a través
 de un Adapter personalizado, permitirá una presentación optimizada de los
 datos.
 ## Funcionalidades de ampliación:
-### Transferencias:
-Permitiría tener en una tabla aparte, los registros con las
+Transferencias: permitiría tener en una tabla aparte, los registros con las
 transferencias realizadas o recibidas por el usuario. Ya que no se pueden
 considerar como un gasto o un ingreso ya que pueden ser transferencias a uno
 mismo o a un miembro de la familia considero que deben ir aparte.
