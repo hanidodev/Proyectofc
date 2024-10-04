@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.proyectofcas.databinding.FragmentGastosBinding
+import model.AppViewModel
 
 
 class GastosFragment : Fragment() {
@@ -77,6 +79,9 @@ class GastosFragment : Fragment() {
         menuCasa.setOnLongClickListener{
             rootview.findNavController().navigate(R.id.action_gastosFragment_to_gastos1nivelFragment)
 
+            val mostrar = ViewModelProvider(requireActivity())[AppViewModel::class.java]
+            mostrar.mostrarGastos = "casa"
+
             true
         }
 
@@ -86,6 +91,13 @@ class GastosFragment : Fragment() {
 
         menuCompras.setOnClickListener {
             toggleSubMenu(vistaCompras, vistaCasa, vistaSuministros, vistaVehiculo, vistaSeguros, vistaOcio, vistaSalud, vistaEducacion, vistaSuscripciones)
+        }
+
+        menuCompras.setOnLongClickListener{
+            rootview.findNavController().navigate(R.id.action_gastosFragment_to_gastos1nivelFragment)
+            val mostrar = ViewModelProvider(requireActivity())[AppViewModel::class.java]
+            mostrar.mostrarGastos = "compras"
+            true
         }
 
         menuVehiculo.setOnClickListener {

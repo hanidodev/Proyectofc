@@ -44,13 +44,23 @@ class DisplayFragment : Fragment() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        //observar los gastos a mostrar (12 últimos)
-        appViewModel.allGastosCasa.observe(viewLifecycleOwner) { gastos ->
-            gastos?.let {
-                //actualiza los datos en el reciclerView
-                adapter.submitList(it)
+        val mostrar = ViewModelProvider(requireActivity())[AppViewModel::class.java]
+        if(mostrar.mostrarGastos == "casa"){
+            appViewModel.allGastosCasa.observe(viewLifecycleOwner) { gastos ->
+                gastos?.let {
+                    //actualiza los datos en el reciclerView
+                    adapter.submitList(it)
+                }
+            }
+        }else if(mostrar.mostrarGastos == "compras"){
+            appViewModel.allGastosCompras.observe(viewLifecycleOwner) { gastos ->
+                gastos?.let {
+                    //actualiza los datos en el reciclerView
+                    adapter.submitList(it)
+                }
             }
         }
+
 
         return view
     }
