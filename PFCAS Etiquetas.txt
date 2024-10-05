@@ -1,3 +1,5 @@
+Gastos
+
 Casa
 	Suministros
 		Agua
@@ -45,3 +47,19 @@ Suscripciones
 	Mensuales
 	Anuales
 	Otras suscripciones
+
+
+Ingresos
+	Nómina
+	Otros trabajos
+	Ventas a particulares
+	Donaciones y regalos
+	Herencias
+	Cobros de deudas
+	Otros ingresos
+
+
+
+
+
+
