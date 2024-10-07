@@ -1,0 +1,14 @@
+
+# Enlaces del proyecto FCAS
+
+## Diagrama de Gantt (monday)
+
+https://iessanclemente-unit.monday.com/boards/1655236893
+
+## Diagrama de flujo de la aplicación.
+
+https://lucid.app/lucidchart/ba0a8bfe-cadc-4a16-ba8f-ce37af9e8f49/edit?page=0_0&invitationId=inv_5d14c2c4-8c5d-4f05-8340-c8a9c2ea06f4#
+
+## Diagrama de casos de uso.
+
+https://lucid.app/lucidchart/ed2c7499-98f1-43cd-901d-618a4e249ff4/edit?beaconFlowId=A41BFB602C79FE4E&invitationId=inv_6e31ed53-b187-4a84-8882-50dfc6a83c85&page=0_0
