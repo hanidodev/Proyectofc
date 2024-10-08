@@ -20,7 +20,7 @@ Los ingresos, por otra parte, se categorizan en: ingresos por nómina, ingresos 
 ## Flujo de la aplicación:
 [Enlace a diagrama de flujo (Lucidchart)](https://lucid.app/lucidchart/ba0a8bfe-cadc-4a16-ba8f-ce37af9e8f49/edit?viewport_loc=-975%2C16%2C3224%2C1535%2C0_0&invitationId=inv_5d14c2c4-8c5d-4f05-8340-c8a9c2ea06f4)
 
-![Diagrama de flujo de aplicacion](Imagenes/flujo_aplicacion.png)
+![Diagrama de flujo de aplicacion](Doc/Imagenes/flujo_aplicacion.png)
 
 ## Arquitectura de la aplicación:
 La app seguirá una estructura de tipo **Model-View-ViewModel (MVVM) ** que usará es este caso** ViewModel** con **LiveData**, **fragmentos** para las vistas y tareas y **Room** para consistencia de datos.
