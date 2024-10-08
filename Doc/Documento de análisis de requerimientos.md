@@ -44,7 +44,7 @@ Principales tecnologías de software a utilizar:
 Describe cómo será la interacción del usuario con la aplicación, incluyendo los diseños de las pantallas (puedes incluir wireframes o prototipos si los tienes).
 El usuario navegará por la interfaz de la aplicación mediante el flujo normal de la aplicación y mediante barras de navegación: "Navigation Drawer", "Bottom Navigation Bar", botones "FAB", etc.
 El feedback se gestionará principalmente mediante elementos "Toast" y se tendrá en cuenta incluir también elementos "Snackbar" en los casos en los que sea más adecuado.
-![Ejemplo de pantalla de gastos[(Imagenes/ejemplo_pantalla_gastos.png)]]
+![Ejemplo de pantalla de gastos](Imagenes/ejemplo_pantalla_gastos.png)
 
 ## Futuras Mejoras:
 
