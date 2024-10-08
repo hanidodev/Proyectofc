@@ -1,6 +1,0 @@
-Idea.
-
-Aplicación de Gestión de Gastos Personales
-Descripción: Una app que permita a los usuarios registrar sus ingresos y gastos, categorizarlos, y visualizar su presupuesto en gráficos simples. 
-La app podría alertar al usuario si se acerca al límite de su presupuesto.
-Tecnologías: Java en Android Studio con SQLite para el almacenamiento local de los datos financieros.
