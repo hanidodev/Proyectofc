@@ -61,7 +61,6 @@ class DisplayFragment : Fragment() {
             }
         }
 
-
         return view
     }
 
