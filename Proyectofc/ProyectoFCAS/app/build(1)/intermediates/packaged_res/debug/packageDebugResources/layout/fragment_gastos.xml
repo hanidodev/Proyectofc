@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor de todos los elementos de primer nivel -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/primaryMenuContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Primer elemento (Casa) del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuCasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_casa"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú 1(Casa), inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaCasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuCasaSuministros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_suministros"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <LinearLayout
+            android:id="@+id/vistaCasaSuministros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosAgua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_agua"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosElectricidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_electricidad"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosGas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_gas"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosTelecomunicaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_telecomunicaciones"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/menuItemCasaSuministrosOtros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/etiqueta_otros_suministros"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/menuItemCasaHipoteca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_hipoteca"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemCasaAlquiler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_alquiler"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+
+        <TextView
+            android:id="@+id/menuItemCasaComunidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_comunidad"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemCasaOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_gastos_casa"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+    </LinearLayout>
+    <!-- Segundo elemento (Compras) del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuCompras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_compras"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú 2(Compras), inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaCompras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuItemComprasSupermercado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_supermercado"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemComprasRopa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_ropa_y_complementos"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemComprasOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otras_compras"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- Tercer elemento (Vehículo) del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_vehiculo"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú Vehículo, inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuItemVehiculoCombustible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_combustible"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemVehiculoMantenimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_mantenimiento"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemVehiculoOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_gastos_vehiculo"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- Cuarto elemento (Seguros) del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuSeguros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_seguros"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú (4)Seguros, inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaSeguros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuItemSeguroVehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_seguro_vehiculo"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemSeguroCasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_seguro_casa"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemSeguroVida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_seguro_vida"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemSeguroOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_seguros"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- Quinto elemento (Ocio) del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuOcio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_ocio"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú 5, inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaOcio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuItemOcioRestauracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_restauracion"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemOcioEventos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_eventos"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemOcioOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_gastos_ocio"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- Sexto elemento (Salud) del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuSalud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_salud"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú 6(Salud), inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaSalud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuItemSaludMedicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_gastos_medicos"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemSaludFarmacia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_farmacia"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemSaludOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_gastos_salud"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- Séptimo elemento (Educación) del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuEducacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_educacion"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú 7(Educación), inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaEducacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuItemEducacionColegios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_colegios"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemEducacionCursos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_cursos"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemEducacionOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_gastos_educacion"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- Octavo elemento (Suscripciones) del menú de primer nivel -->
+    <TextView
+        android:id="@+id/menuSuscripciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_suscripciones"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold" />
+
+    <!-- Submenú anidado bajo el menú 8(Suscripciones), inicialmente oculto -->
+    <LinearLayout
+        android:id="@+id/vistaSuscripciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/menuItemSuscripcionesMensuales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_mensuales"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemSuscripcionesAnuales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_anuales"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/menuItemOtrosSuscripciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/etiqueta_otros_gastos_suscripciones"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground" />
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,65 @@
+Gastos
+
+Casa
+	Suministros
+		Agua
+		Electricidad
+		Gas
+		Telecomunicaciones
+		Otros
+	Hipoteca
+	Alquiler
+	Comunidad
+	Otros gastos de casa
+
+Compras
+	Supermercado
+	Ropa y complementos
+	Otras compras
+
+Vehículo
+	Combustible
+	Mantenimiento
+	Otros gastos en vehículos
+
+Seguros
+	Vehículo
+	Casa
+	Vida
+	Otros seguros
+
+Ocio
+	Restauración
+	Eventos
+	Otros gastos en ocio
+
+Salud
+	Médico
+	Farmacia
+	Otros gastos en salud
+
+Educación
+	Colegio
+	Cursos
+	Otros gastos en educación
+
+Suscripciones
+	Mensuales
+	Anuales
+	Otras suscripciones
+
+
+Ingresos
+	Nómina
+	Otros trabajos
+	Ventas a particulares
+	Donaciones y regalos
+	Herencias
+	Cobros de deudas
+	Otros ingresos
+
+
+
+
+
+

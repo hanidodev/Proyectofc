@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">ProyectoFCAS</string>
+    <string name="title_welcome_fragment">My Money</string>
+    <string name="hello_welcome_fragment">Una manera sencilla de gestionar tu dinero</string>
+    <string name="start_app_button">Comencemos</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_gasto_button">Añadir gasto</string>
+    <string name="add_gasto_2lines">Añadir\n gasto</string>
+    <string name="add_ingreso_button">Añadir ingreso</string>
+    <string name="pr_gastos_button">Gastos</string>
+    <string name="pr_presupuestos_button">Presupuestos</string>
+    <string name="pr_ingresos_button">Ingresos</string>
+    <string name="pr_estadistica_button">Estadística</string>
+    <string name="pr_transferencias_button">Transferencias</string>
+    <string name="button_home">Button</string>
+    <string name="etiqueta_casa">Casa</string>
+    <string name="etiqueta_suministros">Suministros</string>
+    <string name="etiqueta_agua">Agua</string>
+    <string name="etiqueta_electricidad">Electricidad</string>
+    <string name="etiqueta_gas">Gas</string>
+    <string name="etiqueta_telecomunicaciones">Telecomunicaciones</string>
+    <string name="etiqueta_otros_suministros">Otros suministros</string>
+    <string name="etiqueta_hipoteca">Hipoteca</string>
+    <string name="etiqueta_alquiler">Alquiler</string>
+    <string name="etiqueta_comunidad">Comunidad</string>
+    <string name="etiqueta_otros_gastos_casa">Otros gastos de casa</string>
+    <string name="etiqueta_compras">Compras</string>
+    <string name="etiqueta_supermercado">Supermercado</string>
+    <string name="etiqueta_ropa_y_complementos">Ropa y complementos</string>
+    <string name="etiqueta_otras_compras">Otras compras</string>
+    <string name="etiqueta_vehiculo">Vehículo</string>
+    <string name="etiqueta_combustible">Combustible</string>
+    <string name="etiqueta_mantenimiento">Mantenimiento</string>
+    <string name="etiqueta_otros_gastos_vehiculo">Otros gastos de vehículo</string>
+    <string name="etiqueta_seguros">Seguros</string>
+    <string name="etiqueta_seguro_vehiculo">Seguro de vehículo</string>
+    <string name="etiqueta_seguro_casa">Seguro de casa</string>
+    <string name="etiqueta_seguro_vida">Seguro de vida</string>
+    <string name="etiqueta_otros_seguros">Otros seguros</string>
+    <string name="etiqueta_ocio">Ocio</string>
+    <string name="etiqueta_restauracion">Restauración</string>
+    <string name="etiqueta_eventos">Eventos</string>
+    <string name="etiqueta_otros_gastos_ocio">Otros gastos en ocio</string>
+    <string name="etiqueta_salud">Salud</string>
+    <string name="etiqueta_gastos_medicos">Gastos médicos</string>
+    <string name="etiqueta_farmacia">Farmacia</string>
+    <string name="etiqueta_otros_gastos_salud">Otros gastos en salud</string>
+    <string name="etiqueta_educacion">Educación</string>
+    <string name="etiqueta_colegios">Colegios</string>
+    <string name="etiqueta_cursos">Cursos</string>
+    <string name="etiqueta_otros_gastos_educacion">Otros gastos en educación</string>
+    <string name="etiqueta_suscripciones">Suscripciones</string>
+    <string name="etiqueta_mensuales">Mensuales</string>
+    <string name="etiqueta_anuales">Anuales</string>
+    <string name="etiqueta_otros_gastos_suscripciones">Otras suscripciones</string>
+    <string name="etiqueta_gastos">Gastos</string>
+    <string name="etiqueta_texto_aqui">texto_aqui</string>
+    <string name="mostar_cantidad">Cantidad</string>
+    <string name="mostrar_concepto">Concepto</string>
+    <string name="mostrar_fecha">Fecha</string>
+    <string name="cabecera_cantidad">Cantidad (€)</string>
+    <string name="cabecera_concepto">Concepto</string>
+    <string name="cabecera_fecha">Fecha</string>
+    <string name="title_add_gasto">Añadir gasto</string>
+    <string-array name="spinner_etiquetas_gastos">
+        <item>Seleccionar concepto</item>
+        <item>Agua</item>
+        <item>Electricidad</item>
+        <item>Gas</item>
+        <item>Telecomunicaciones</item>
+        <item>Hipoteca</item>
+        <item>Alquiler</item>
+        <item>Comunidad</item>
+        <item>Supermercado</item>
+        <item>Ropa y complementos</item>
+        <item>Combustible</item>
+        <item>Mantenimiento de vehículo</item>
+        <item>Seguro de coche</item>
+        <item>Seguro de casa</item>
+        <item>Seguro de vida</item>
+        <item>Restauración</item>
+        <item>Entradas a eventos</item>
+        <item>Médico</item>
+        <item>Farmacia</item>
+        <item>Colegio</item>
+        <item>Curso</item>
+        <item>Suscripción mensual</item>
+        <item>Suscripción anual</item>
+        <item>Otros gastos</item>
+    </string-array>
+    <string-array name="spinner_etiquetas_gastos_otros">
+        <item>Otros Casa</item>
+        <item>Otros Compras</item>
+        <item>Otros Vehículos</item>
+        <item>Otros Seguros</item>
+        <item>Otros Ocio</item>
+        <item>Otros Salud</item>
+        <item>Otros Educación</item>
+        <item>Otros Suscripciones</item>
+    </string-array>
+    <string name="texto_seleccionar">Seleccionar</string>
+    <string name="hint_especificar_cantidad_en_euros">Especificar cantidad en euros</string>
+    <string name="button_borrarBD">Borrar\ntodos los datos\nde la bd</string>
+</resources>

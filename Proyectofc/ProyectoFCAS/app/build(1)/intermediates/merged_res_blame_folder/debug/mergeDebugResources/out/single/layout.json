@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.example.proyectofcas.app-mergeDebugResources-53:/layout/fragment_item.xml",
+        "source": "com.example.proyectofcas.app-main-56:/layout/fragment_item.xml"
+    },
+    {
+        "merged": "com.example.proyectofcas.app-mergeDebugResources-53:/layout/activity_main.xml",
+        "source": "com.example.proyectofcas.app-main-56:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.proyectofcas.app-mergeDebugResources-53:/layout/fragment_principal.xml",
+        "source": "com.example.proyectofcas.app-main-56:/layout/fragment_principal.xml"
+    },
+    {
+        "merged": "com.example.proyectofcas.app-mergeDebugResources-53:/layout/fragment_gastos1nivel.xml",
+        "source": "com.example.proyectofcas.app-main-56:/layout/fragment_gastos1nivel.xml"
+    },
+    {
+        "merged": "com.example.proyectofcas.app-mergeDebugResources-53:/layout/fragment_welcome.xml",
+        "source": "com.example.proyectofcas.app-main-56:/layout/fragment_welcome.xml"
+    },
+    {
+        "merged": "com.example.proyectofcas.app-mergeDebugResources-53:/layout/fragment_add_gasto.xml",
+        "source": "com.example.proyectofcas.app-main-56:/layout/fragment_add_gasto.xml"
+    },
+    {
+        "merged": "com.example.proyectofcas.app-mergeDebugResources-53:/layout/fragment_gastos.xml",
+        "source": "com.example.proyectofcas.app-main-56:/layout/fragment_gastos.xml"
+    }
+]
