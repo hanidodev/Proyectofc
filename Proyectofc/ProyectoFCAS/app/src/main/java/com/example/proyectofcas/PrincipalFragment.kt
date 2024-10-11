@@ -17,7 +17,7 @@ import model.GastoDao
 
 class PrincipalFragment : Fragment() {
 
-    private val pruebas:String = ""
+    private val pruebas:Int = 0
 
     private var _bindingPrincipal:FragmentPrincipalBinding? = null
     private val bindingPrincipal:FragmentPrincipalBinding
