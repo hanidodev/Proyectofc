@@ -22,7 +22,7 @@ Los ingresos, por otra parte, se categorizan en: ingresos por nómina, ingresos 
 
 Diagrama de flujo:
 
-![Diagrama de flujo de aplicacion](Imagenes/flujo_aplicacion.png)
+![Diagrama de flujo de aplicacion](../Imagenes/flujo_aplicacion.PNG)
 
 ## Arquitectura de la aplicación:
 La app seguirá una estructura de tipo **Model-View-ViewModel (MVVM) ** que usará es este caso** ViewModel** con **LiveData**, **fragmentos** para las vistas y tareas y **Room** para consistencia de datos.

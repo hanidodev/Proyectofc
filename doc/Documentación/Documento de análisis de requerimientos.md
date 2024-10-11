@@ -43,7 +43,11 @@ El feedback se gestionará principalmente mediante elementos "Toast" y se tendr�
 Ejemplo de diseño de GUI para la pantalla principal de gastos:
 
 
-![Ejemplo de pantalla de gastos](Imagenes/ejemplo_pantalla_gastos.png)
+![Ejemplo de pantalla de gastos](../Imagenes/ejemplo_pantalla_gastos.png)
+
+## Casos de uso:
+
+![Diagrama de casos de uso](../Imagenes/diagrama_de_casos_de_uso.png)
 
 ## Futuras Mejoras:
 
