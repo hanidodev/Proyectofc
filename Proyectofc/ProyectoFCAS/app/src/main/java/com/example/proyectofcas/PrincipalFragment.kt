@@ -16,7 +16,6 @@ import model.AppDatabase
 import model.GastoDao
 
 class PrincipalFragment : Fragment() {
-    private lateinit var prueba:String
 
     private var _bindingPrincipal:FragmentPrincipalBinding? = null
     private val bindingPrincipal:FragmentPrincipalBinding
