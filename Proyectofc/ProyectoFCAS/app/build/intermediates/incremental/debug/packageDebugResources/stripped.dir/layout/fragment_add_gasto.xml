@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_gasto_button"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_add_gasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:entries="@array/spinner_etiquetas_gastos"
+            android:minHeight="48dp" />
+
+        <Spinner
+            android:id="@+id/spinner_add_gasto_otros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:entries="@array/spinner_etiquetas_gastos_otros"
+            android:minHeight="48dp"
+            android:prompt="@string/texto_seleccionar" />
+
+        <EditText
+            android:id="@+id/add_gasto_cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/hint_especificar_cantidad_en_euros"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:autofillHints="amount"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <DatePicker
+            android:id="@+id/add_gasto_datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_margin="18dp"/>
+
+        <Button
+            android:id="@+id/button_add_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/add_gasto_2lines"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+</ScrollView>
